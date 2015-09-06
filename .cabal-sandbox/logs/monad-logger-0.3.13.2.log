@@ -1,0 +1,55 @@
+Configuring monad-logger-0.3.13.2...
+Building monad-logger-0.3.13.2...
+Preprocessing library monad-logger-0.3.13.2...
+
+Control/Monad/Logger.hs:328:34:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        mask a = NoLoggingT $ mask $ \u -> runNoLoggingT (a $ q u)
+                                     ^
+
+Control/Monad/Logger.hs:331:44:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+            NoLoggingT $ uninterruptibleMask $ \u -> runNoLoggingT (a $ q u)
+                                               ^
+
+Control/Monad/Logger.hs:418:36:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = LoggingT $ \e -> mask $ \u -> runLoggingT (a $ q u) e
+                                       ^
+
+Control/Monad/Logger.hs:421:44:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        LoggingT $ \e -> uninterruptibleMask $ \u -> runLoggingT (a $ q u) e
+                                               ^
+4 warnings generated.
+[1 of 1] Compiling Control.Monad.Logger ( Control/Monad/Logger.hs, dist/dist-sandbox-6d268ff1/build/Control/Monad/Logger.o )
+
+Control/Monad/Logger.hs:105:1: Warning:
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+Control/Monad/Logger.hs:205:26: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Logger.hs:205:51: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Logger.hs:223:28: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Logger.hs:223:55: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+In-place registering monad-logger-0.3.13.2...
+Creating package registration file:
+/var/folders/lb/0f5sn8jd3x12sd6zps_gkxd80000gn/T/pkgConf-monad-logger-0.3.139365095431008240338.2
+Installing library in
+/Users/brett/workspace/scottyFun/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.2/monad-logger-0.3.13.2-Fsfd7BfRlOGL0nBWHQfnbK
+Registering monad-logger-0.3.13.2...

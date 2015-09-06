@@ -1,0 +1,102 @@
+Configuring exceptions-0.8.0.2...
+Building exceptions-0.8.0.2...
+Preprocessing library exceptions-0.8.0.2...
+
+src/Control/Monad/Catch.hs:205:31:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = IdentityT $ mask $ \u -> runIdentityT (a $ q u)
+                                  ^
+
+src/Control/Monad/Catch.hs:209:39:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        IdentityT $ uninterruptibleMask $ \u -> runIdentityT (a $ q u)
+                                          ^
+
+src/Control/Monad/Catch.hs:218:40:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = LazyS.StateT $ \s -> mask $ \u -> LazyS.runStateT (a $ q u) s
+                                           ^
+
+src/Control/Monad/Catch.hs:222:48:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        LazyS.StateT $ \s -> uninterruptibleMask $ \u -> LazyS.runStateT (a $ q u) s
+                                                   ^
+
+src/Control/Monad/Catch.hs:231:42:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = StrictS.StateT $ \s -> mask $ \u -> StrictS.runStateT (a $ q u) s
+                                             ^
+
+src/Control/Monad/Catch.hs:235:50:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        StrictS.StateT $ \s -> uninterruptibleMask $ \u -> StrictS.runStateT (a $ q u) s
+                                                     ^
+
+src/Control/Monad/Catch.hs:244:35:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = ReaderT $ \e -> mask $ \u -> runReaderT (a $ q u) e
+                                      ^
+
+src/Control/Monad/Catch.hs:248:43:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        ReaderT $ \e -> uninterruptibleMask $ \u -> runReaderT (a $ q u) e
+                                              ^
+
+src/Control/Monad/Catch.hs:257:37:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = StrictW.WriterT $ mask $ \u -> StrictW.runWriterT (a $ q u)
+                                        ^
+
+src/Control/Monad/Catch.hs:261:45:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        StrictW.WriterT $ uninterruptibleMask $ \u -> StrictW.runWriterT (a $ q u)
+                                                ^
+
+src/Control/Monad/Catch.hs:270:35:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = LazyW.WriterT $ mask $ \u -> LazyW.runWriterT (a $ q u)
+                                      ^
+
+src/Control/Monad/Catch.hs:274:43:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        LazyW.WriterT $ uninterruptibleMask $ \u -> LazyW.runWriterT (a $ q u)
+                                              ^
+
+src/Control/Monad/Catch.hs:283:42:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = LazyRWS.RWST $ \r s -> mask $ \u -> LazyRWS.runRWST (a $ q u) r s
+                                             ^
+
+src/Control/Monad/Catch.hs:287:50:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        LazyRWS.RWST $ \r s -> uninterruptibleMask $ \u -> LazyRWS.runRWST (a $ q u) r s
+                                                     ^
+
+src/Control/Monad/Catch.hs:296:44:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+      mask a = StrictRWS.RWST $ \r s -> mask $ \u -> StrictRWS.runRWST (a $ q u) r s
+                                               ^
+
+src/Control/Monad/Catch.hs:300:52:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+        StrictRWS.RWST $ \r s -> uninterruptibleMask $ \u -> StrictRWS.runRWST (a $ q u) r s
+                                                       ^
+
+src/Control/Monad/Catch.hs:435:38:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+bracket acquire release use = mask $ \unmasked -> do
+                                     ^
+
+src/Control/Monad/Catch.hs:454:45:
+     warning: \u used with no following hex digits; treating as '\' followed by identifier [-Wunicode]
+bracketOnError acquire release use = mask $ \unmasked -> do
+                                            ^
+18 warnings generated.
+[1 of 2] Compiling Control.Monad.Catch ( src/Control/Monad/Catch.hs, dist/dist-sandbox-6d268ff1/build/Control/Monad/Catch.o )
+[2 of 2] Compiling Control.Monad.Catch.Pure ( src/Control/Monad/Catch/Pure.hs, dist/dist-sandbox-6d268ff1/build/Control/Monad/Catch/Pure.o )
+In-place registering exceptions-0.8.0.2...
+Creating package registration file:
+/var/folders/lb/0f5sn8jd3x12sd6zps_gkxd80000gn/T/pkgConf-exceptions-0.8.02121578553552265483.2
+Installing library in
+/Users/brett/workspace/scottyFun/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.2/exceptions-0.8.0.2-8GsEeHgaIks3pVGk6GaELJ
+Registering exceptions-0.8.0.2...

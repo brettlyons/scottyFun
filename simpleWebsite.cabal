@@ -1,0 +1,34 @@
+name: simpleWebsite
+version: 0.0.1
+synopsis: My awesome app
+homepage: none
+license: MIT
+author: Brett Lyons
+maintainer: blyons@students.naropa.edu
+category: Web
+build-type: Simple
+cabal-version: >=1.8
+
+executable simpleWebsite
+  main-is:  Main.hs
+  -- other-modules:
+  build-depends:    base
+                  , wai
+                  , warp
+                  , http-types
+                  , resourcet
+                  , scotty
+                  , text
+                  , bytestring
+                  , blaze-html
+                  , persistent
+                  , persistent-template
+                  , persistent-sqlite
+                  , monad-logger
+                  , heroku
+                  , transformers
+                  , wai-middleware-static
+                  , wai-extra
+                  , time
+
+
